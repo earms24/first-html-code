@@ -3,9 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <Ethan And Carrick>Blank Page</Ethan And Carrick>
+    <title>Blank Document</title>
 </head>
 <body>
+
+    <header>
+        <h1>very very good test</h1>
+    </header>
+
+    <!-- Content goes here -->
 
 </body>
 </html>
