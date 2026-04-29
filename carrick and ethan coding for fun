@@ -2,16 +2,34 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blank Document</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 20px; }
+        header { background-color: #f4f4f4; padding: 10px; border-bottom: 2px solid #ddd; }
+        .upload-section { margin-top: 30px; }
+        /* Style to make the default file input look like a button */
+        input[type="file"]::file-selector-button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="file"]::file-selector-button:hover { background-color: #0056b3; }
+    </style>
 </head>
 <body>
 
     <header>
-        <h1>very very good test</h1>
+        <h1>test 1</h1>
     </header>
 
-    <!-- Content goes here -->
+    <div class="upload-section">
+        <label for="file-upload">Choose a file to upload:</label>
+        <!-- The core element for file selection -->
+        <input type="file" id="file-upload" name="file-upload">
+    </div>
 
 </body>
 </html>
