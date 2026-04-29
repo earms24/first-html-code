@@ -2,34 +2,49 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Blank Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open File Document</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 20px; }
-        header { background-color: #f4f4f4; padding: 10px; border-bottom: 2px solid #ddd; }
-        .upload-section { margin-top: 30px; }
-        /* Style to make the default file input look like a button */
-        input[type="file"]::file-selector-button {
-            padding: 10px 20px;
-            background-color: #007bff;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
-        input[type="file"]::file-selector-button:hover { background-color: #0056b3; }
+        header {
+            width: 100%;
+            padding: 20px;
+            text-align: center;
+            background-color: #f4f4f4;
+            margin-bottom: 50px;
+        }
+        /* Styling the link to look like a button */
+        .btn-link {
+            padding: 12px 24px;
+            background-color: #28a745; /* Green color */
+            color: white;
+            text-decoration: none; /* Removes the underline */
+            border-radius: 5px;
+            font-weight: bold;
+            display: inline-block;
+        }
+        .btn-link:hover {
+            background-color: #218838;
+        }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>test 1</h1>
+        <h1>John Doe</h1>
     </header>
 
-    <div class="upload-section">
-        <label for="file-upload">Choose a file to upload:</label>
-        <!-- The core element for file selection -->
-        <input type="file" id="file-upload" name="file-upload">
-    </div>
+    <!-- The target="_blank" attribute is what forces it to open in a new tab -->
+    <a href="file:///home/chronos/u-ab8c7354b35012715cae19fee04a0b89b9321c4f/MyFiles/Downloads/carrick%20and%20ethan%20coding%20for%20fun.html" target="_blank" class="btn-link">
+        View Document
+    </a>
 
 </body>
 </html>
